@@ -1,5 +1,13 @@
 package com.example.demo.entity;
 
-public class Item {
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+@Getter @Setter @ToString 
+public class Item {
+	
+	private String itemName;
+	private String sku;
+	
 }
