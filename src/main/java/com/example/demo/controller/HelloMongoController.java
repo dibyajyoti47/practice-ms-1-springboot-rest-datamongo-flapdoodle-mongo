@@ -12,9 +12,6 @@ import com.example.demo.repository.CustomerRepository;
 @RestController
 public class HelloMongoController {
 	
-	@Autowired
-	private CustomerRepository repo;
-	
 	@GetMapping(path="/")
 	public ResponseEntity<String> sayHello() {		
 		return new ResponseEntity<>("Hello Mongo.", HttpStatus.OK);
